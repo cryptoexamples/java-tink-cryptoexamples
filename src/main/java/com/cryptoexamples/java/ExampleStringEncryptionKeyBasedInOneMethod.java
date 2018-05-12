@@ -6,7 +6,6 @@ import com.google.crypto.tink.KeysetHandle;
 import com.google.crypto.tink.aead.AeadConfig;
 import com.google.crypto.tink.aead.AeadFactory;
 import com.google.crypto.tink.aead.AeadKeyTemplates;
-import com.google.crypto.tink.proto.KeyTemplate;
 
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
@@ -38,9 +37,9 @@ public class ExampleStringEncryptionKeyBasedInOneMethod {
 
       // ENCRYPTION
       Aead aeadEncryption = AeadFactory.getPrimitive(keysetHandle);
-      byte[] ciperTextBytes = aeadEncryption.encrypt(plainText.getBytes(StandardCharsets.UTF_8),null);
+      byte[] cipherTextBytes = aeadEncryption.encrypt(plainText.getBytes(StandardCharsets.UTF_8),null);
       // conversion of raw bytes to BASE64 representation
-      String cipherText = new String(Base64.getEncoder().encode(ciperTextBytes));
+      String cipherText = new String(Base64.getEncoder().encode(cipherTextBytes));
 
       // DECRYPTION
       Aead aeadDecryption = AeadFactory.getPrimitive(keysetHandle);
