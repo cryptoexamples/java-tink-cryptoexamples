@@ -1,13 +1,13 @@
 ---
 title: Java String Signing using Google Tink
 keywords: sample
-summary: "Java based string signing using Google Tink"
+summary: "Java string signing using Google Tink"
 permalink: java_tink_string_sign.html
 folder: Java Tink
 references: [
     # Place a list of references used to create and/or understand this example.
     {
-        url: "https://github.com/google/tink/blob/master/doc/JAVA-HOWTO.md",
+        url: "https://github.com/google/tink/blob/master/docs/JAVA-HOWTO.md",
         description: "Google Tink Java Howto"
     }
 ]
@@ -24,7 +24,7 @@ current_reviews: [
 
 ]
 # Indicates when this example was last updated/created. Reviews don't change this.
-last_updated: "2018-05-12"
+last_updated: "2018-06-28"
 tags: [Java]
 ---
 
@@ -32,7 +32,7 @@ tags: [Java]
 
 - Verifying if a string has been changed
 
-## Sample Code
+## Example Code
 
 ```java
 {% include_relative src/main/java/com/cryptoexamples/java/ExampleSignatureInOneMethod.java %}
