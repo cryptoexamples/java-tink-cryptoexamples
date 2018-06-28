@@ -28,7 +28,7 @@ public class ExampleSignatureInOneMethod {
     String plainText = "Text that should be signed to prevent unknown tampering with its content.";
     try {
       // Initialize Tink configuration
-      Config.register(SignatureConfig.TINK_1_1_0);
+      Config.register(SignatureConfig.TINK_1_1_1);
 
       // GENERATE NEW KEYPAIR
       KeysetHandle privateKeysetHandle = KeysetHandle.generateNew(SignatureKeyTemplates.ED25519);
@@ -36,7 +36,7 @@ public class ExampleSignatureInOneMethod {
 
       // SIGN DATA/STRING
       byte[] signatureBytes = signer.sign(plainText.getBytes(StandardCharsets.UTF_8));
-      String signatureForPlainTextString = new String(Base64.getEncoder().encode(signatureBytes),StandardCharsets.UTF_8);
+      String signatureForPlainTextString = new String(Base64.getEncoder().encode(signatureBytes), StandardCharsets.UTF_8);
       LOGGER.log(Level.INFO, () -> String.format("Signature: %s", signatureForPlainTextString));
 
       // VERIFY JUST CREATED SIGNATURE USING PUBLIC KEY
