@@ -32,7 +32,7 @@ tags: [Java]
 
 - Verifying if a string has been changed
 
-## Sample Code
+## Example Code
 
 ```java
 {% include_relative src/main/java/com/cryptoexamples/java/ExampleSignatureInOneMethod.java %}
