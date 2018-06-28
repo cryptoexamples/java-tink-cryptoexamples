@@ -29,7 +29,7 @@ public class ExampleStringEncryptionKeyBasedInOneMethod {
 
     try {
       // Initialize Tink configuration
-      Config.register(AeadConfig.TINK_1_1_1);
+      Config.register(AeadConfig.TINK_1_1_0);
 
       // GENERATE key
       // TODO key should only be generated once and then stored in a secure location.
