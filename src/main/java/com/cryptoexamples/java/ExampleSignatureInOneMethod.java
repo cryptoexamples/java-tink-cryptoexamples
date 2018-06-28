@@ -28,7 +28,7 @@ public class ExampleSignatureInOneMethod {
     String plainText = "Text that should be signed to prevent unknown tampering with its content.";
     try {
       // Initialize Tink configuration
-      Config.register(SignatureConfig.TINK_1_1_1);
+      Config.register(SignatureConfig.TINK_1_1_0);
 
       // GENERATE NEW KEYPAIR
       KeysetHandle privateKeysetHandle = KeysetHandle.generateNew(SignatureKeyTemplates.ED25519);
