@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.1] - 2018-06-28
+
 ### Removed
 
 - Removed unused import
@@ -14,6 +16,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 
 - Fixed typo in varialbe
+- Fixed reference links
+
+### Changed
+
+- Changed "sample code" to "example code"
+- Changed dependency of Google Tink to 1.1.1
 
 ## [0.1.0] - 2018-05-12
 
@@ -53,6 +61,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - made some security relevant changes
 - made other security relevant changes
 
-[Unreleased]: https://github.com/cryptoexamples/java-tink-cryptoexamples/compare/v0.1.0...HEAD
-[0.1.x]: https://github.com/cryptoexamples/java-tink-cryptoexamples/compare/v0.1.0...v0.1.x
+[Unreleased]: https://github.com/cryptoexamples/java-tink-cryptoexamples/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/cryptoexamples/java-tink-cryptoexamples/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/cryptoexamples/java-tink-cryptoexamples/releases/tag/v0.1.0
