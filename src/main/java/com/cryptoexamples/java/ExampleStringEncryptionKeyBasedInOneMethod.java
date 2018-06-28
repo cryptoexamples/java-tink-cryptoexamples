@@ -37,14 +37,14 @@ public class ExampleStringEncryptionKeyBasedInOneMethod {
 
       // ENCRYPTION
       Aead aeadEncryption = AeadFactory.getPrimitive(keysetHandle);
-      byte[] cipherTextBytes = aeadEncryption.encrypt(plainText.getBytes(StandardCharsets.UTF_8),null);
+      byte[] cipherTextBytes = aeadEncryption.encrypt(plainText.getBytes(StandardCharsets.UTF_8), null);
       // conversion of raw bytes to BASE64 representation
       String cipherText = new String(Base64.getEncoder().encode(cipherTextBytes));
 
       // DECRYPTION
       Aead aeadDecryption = AeadFactory.getPrimitive(keysetHandle);
       byte[] decryptedCipherTextBytes = aeadDecryption.decrypt(Base64.getDecoder().decode(cipherText), null);
-      String decryptedCipherText = new String(decryptedCipherTextBytes,StandardCharsets.UTF_8);
+      String decryptedCipherText = new String(decryptedCipherTextBytes, StandardCharsets.UTF_8);
 
       LOGGER.log(Level.INFO, () -> String.format("Decrypted and original plain text are the same: %b", decryptedCipherText.compareTo(plainText) == 0));
     } catch (GeneralSecurityException e) {

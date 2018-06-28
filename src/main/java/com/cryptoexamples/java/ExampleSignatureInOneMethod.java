@@ -36,7 +36,7 @@ public class ExampleSignatureInOneMethod {
 
       // SIGN DATA/STRING
       byte[] signatureBytes = signer.sign(plainText.getBytes(StandardCharsets.UTF_8));
-      String signatureForPlainTextString = new String(Base64.getEncoder().encode(signatureBytes),StandardCharsets.UTF_8);
+      String signatureForPlainTextString = new String(Base64.getEncoder().encode(signatureBytes), StandardCharsets.UTF_8);
       LOGGER.log(Level.INFO, () -> String.format("Signature: %s", signatureForPlainTextString));
 
       // VERIFY JUST CREATED SIGNATURE USING PUBLIC KEY
