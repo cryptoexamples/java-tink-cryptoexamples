@@ -1,13 +1,13 @@
 ---
 title: Java String Encryption with key generation using Google Tink
 keywords: sample
-summary: "String encryption in Java with key generation using Google Tink"
+summary: "Java String encryption with key generation using Google Tink"
 permalink: java_tink_string_encryption_key_based_symmetric.html
 folder: Java Tink
 references: [
     # Place a list of references used to create and/or understand this example.
     {
-        url: "https://github.com/google/tink/blob/master/doc/JAVA-HOWTO.md",
+        url: "https://github.com/google/tink/blob/master/docs/JAVA-HOWTO.md",
         description: "Google Tink Java Howto"
     }
 ]
@@ -24,7 +24,7 @@ current_reviews: [
 
 ]
 # Indicates when this example was last updated/created. Reviews don't change this.
-last_updated: "2018-05-12"
+last_updated: "2018-06-28"
 tags: [Java, AES, GCM, AEAD]
 ---
 
@@ -32,7 +32,7 @@ tags: [Java, AES, GCM, AEAD]
 
 - String encryption
 
-## Sample Code
+## Example Code
 
 ```java
 {% include_relative src/main/java/com/cryptoexamples/java/ExampleStringEncryptionKeyBasedInOneMethod.java %}
