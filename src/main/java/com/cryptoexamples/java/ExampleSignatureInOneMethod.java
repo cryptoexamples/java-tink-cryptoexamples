@@ -1,12 +1,11 @@
 package com.cryptoexamples.java;
 
-import com.google.crypto.tink.Config;
 import com.google.crypto.tink.KeysetHandle;
 import com.google.crypto.tink.PublicKeySign;
 import com.google.crypto.tink.PublicKeyVerify;
+import com.google.crypto.tink.config.TinkConfig;
 import com.google.crypto.tink.signature.PublicKeySignFactory;
 import com.google.crypto.tink.signature.PublicKeyVerifyFactory;
-import com.google.crypto.tink.signature.SignatureConfig;
 import com.google.crypto.tink.signature.SignatureKeyTemplates;
 
 import java.nio.charset.StandardCharsets;
@@ -28,7 +27,7 @@ public class ExampleSignatureInOneMethod {
     String plainText = "Text that should be signed to prevent unknown tampering with its content.";
     try {
       // Initialize Tink configuration
-      Config.register(SignatureConfig.TINK_1_1_0);
+      TinkConfig.register();
 
       // GENERATE NEW KEYPAIR
       KeysetHandle privateKeysetHandle = KeysetHandle.generateNew(SignatureKeyTemplates.ED25519);

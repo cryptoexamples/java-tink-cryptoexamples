@@ -1,11 +1,10 @@
 package com.cryptoexamples.java;
 
 import com.google.crypto.tink.Aead;
-import com.google.crypto.tink.Config;
 import com.google.crypto.tink.KeysetHandle;
-import com.google.crypto.tink.aead.AeadConfig;
 import com.google.crypto.tink.aead.AeadFactory;
 import com.google.crypto.tink.aead.AeadKeyTemplates;
+import com.google.crypto.tink.config.TinkConfig;
 
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
@@ -29,7 +28,7 @@ public class ExampleStringEncryptionKeyBasedInOneMethod {
 
     try {
       // Initialize Tink configuration
-      Config.register(AeadConfig.TINK_1_1_0);
+      TinkConfig.register();
 
       // GENERATE key
       // TODO key should only be generated once and then stored in a secure location.

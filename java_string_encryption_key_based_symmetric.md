@@ -24,13 +24,24 @@ current_reviews: [
 
 ]
 # Indicates when this example was last updated/created. Reviews don't change this.
-last_updated: "2018-06-28"
+last_updated: "2020-02-16"
 tags: [Java, AES, GCM, AEAD]
 ---
 
 ## Use cases
 
 - String encryption
+
+
+## Java version
+
+- openjdk8
+- oraclejdk9
+- openjdk9
+- oraclejdk11
+- openjdk11
+- oraclejdk13
+- openjdk13
 
 ## Example Code
 
